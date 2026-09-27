@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@600;650;700;750;800&display=swap');
+
+:root { color-scheme: dark; font-family: 'DM Sans', sans-serif; color: #eceeeb; background: #151718; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; cursor: pointer; }
+button:focus-visible, a:focus-visible { outline: 2px solid #7dad8d; outline-offset: 5px; }
+.masthead { height: 94px; padding: 0 6%; border-bottom: 1px solid #2d3233; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: inline-flex; align-items: center; color: #e7ece8; font-family: 'Manrope', sans-serif; font-size: 24px; font-weight: 800; text-decoration: none; letter-spacing: -1px; }
+.brand-dot { color: #83a98e; }
+.brand-mark { display: inline-flex; align-items: end; gap: 3px; height: 23px; margin-right: 12px; transform: skew(-12deg); }
+.brand-mark i { width: 5px; background: #83a98e; border-radius: 1px; height: 11px; }
+.brand-mark i:nth-child(2) { height: 17px; }
+.brand-mark i:nth-child(3) { height: 23px; }
+.edition { color: #969e9b; font-size: 10px; letter-spacing: 1.8px; font-weight: 600; }
+main { max-width: 1160px; margin: auto; padding: 65px 36px 32px; }
+.eyebrow { display: flex; gap: 9px; align-items: center; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; color: #99b4a1; }
+.today-dot { width: 6px; height: 6px; background: #86a88e; border-radius: 50%; }
+.date { margin-left: 8px; padding-left: 17px; border-left: 1px solid #363d3a; font-size: 12px; letter-spacing: .2px; color: #a1a9a4; font-weight: 450; }
+h1 { font-family: 'Manrope', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.2; font-weight: 750; letter-spacing: -1.9px; margin: 19px 0 13px; }
+.intro p { color: #a1a9a4; font-size: 15px; margin: 0; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin-top: 45px; border-bottom: 1px solid #333938; padding-bottom: 18px; gap: 10px; }
+nav { display: flex; flex-wrap: wrap; gap: 6px; }
+nav button { border: 0; border-radius: 6px; background: transparent; color: #a8b0ac; padding: 10px 17px; font-size: 12px; font-weight: 600; }
+nav button:hover { background: #292f2c; }
+nav button[aria-pressed='true'] { background: #344a3c; color: white; }
+.refresh { border: 0; color: #a1a9a4; background: none; font-size: 11px; padding: 9px 0 9px 12px; }
+.refresh span { display: inline-block; font-size: 17px; margin-right: 4px; vertical-align: -1px; }
+.refresh:disabled { opacity: .4; cursor: wait; }
+.list-heading { display: flex; justify-content: space-between; align-items: center; margin: 22px 0 10px; font-size: 11px; color: #a1a9a4; }
+.list-heading > :last-child { font-size: 9px; letter-spacing: 1.3px; }
+.notice { font-size: 12px; color: #a1a9a4; margin: 12px 0 17px; line-height: 1.6; }
+.matchups { list-style: none; padding: 0; margin: 0; }
+.matchup { background: #1b1f20; display: grid; grid-template-columns: 80px minmax(0, 1fr) 82px; align-items: center; min-height: 88px; border-bottom: 1px solid #2d3331; gap: 15px; }
+.matchup:hover { background: #232827; }
+.game-meta { display: flex; flex-direction: column; gap: 5px; }
+.league { font-size: 10px; font-weight: 650; letter-spacing: .8px; color: #a8b0ac; }
+.preseason { font-size: 9px; color: #99a19c; }
+.pairing { display: grid; grid-template-columns: minmax(0, 1fr) 55px 28px 55px minmax(0, 1fr); align-items: center; gap: 13px; }
+.team { display: flex; align-items: center; gap: 12px; }
+.home { flex-direction: row-reverse; text-align: right; }
+.logo { width: 32px; height: 32px; object-fit: contain; flex-shrink: 0; }
+.team-name { font-size: 14px; line-height: 1.4; font-weight: 600; letter-spacing: -.25px; }
+.streak { display: flex; align-items: center; justify-content: center; min-height: 39px; padding: 6px; border-radius: 5px; font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -.8px; }
+.win { color: #90c6a1; background: #253b2e; }
+.loss { color: #dda09b; background: #422e2e; }
+.unknown { color: #a3aba6; background: #2b302e; }
+.versus { color: #8f9993; text-align: center; font-size: 12px; }
+.timing { text-align: right; display: flex; flex-direction: column; gap: 5px; font-size: 11px; color: #a8b0ac; font-variant-numeric: tabular-nums; }
+.status { font-size: 9px; color: #99a19c; }
+.live { color: #90c6a1; }
+.empty { padding: 70px 20px; text-align: center; color: #a8b0ac; font-size: 14px; border-bottom: 1px solid #2d3331; }
+footer { margin-top: 28px; font-size: 11px; color: #99a19c; }
+.legend { display: flex; gap: 20px; color: #a8b0ac; }
+.legend span { display: flex; align-items: center; gap: 7px; }
+.legend b { width: 6px; height: 6px; border-radius: 50%; }
+.win-dot { background: #90b99c; }
+.loss-dot { background: #c88e88; }
+footer p { font-size: 10px; margin-top: 13px; }
+.source { display: flex; justify-content: space-between; border-top: 1px solid #2d3331; padding-top: 21px; margin-top: 30px; gap: 15px; font-size: 10px; }
+@media (min-width: 1250px) { .team-name { font-size: 15px; } }
+@media (max-width: 760px) {
+  .masthead { height: 74px; padding: 0 23px; }
+  .brand { font-size: 21px; }
+  .edition { display: none; }
+  main { padding: 42px 22px 25px; }
+  h1 { letter-spacing: -1.3px; }
+  .intro p { font-size: 13px; }
+  .toolbar { margin-top: 32px; }
+  nav { gap: 1px; }
+  nav button { padding: 10px 12px; font-size: 11px; }
+  .refresh { font-size: 0; padding-left: 2px; }
+  .refresh span { font-size: 20px; }
+  .matchup { grid-template-columns: 1fr auto; gap: 10px; padding: 17px 0; }
+  .game-meta { grid-row: 1; flex-direction: row; gap: 8px; align-items: center; }
+  .timing { grid-row: 1; grid-column: 2; flex-direction: row; align-items: center; gap: 8px; }
+  .pairing { grid-column: 1 / -1; grid-row: 2; grid-template-columns: minmax(0, 1fr) 43px 12px 43px minmax(0, 1fr); gap: 9px; }
+  .team { flex-direction: column; align-items: flex-start; gap: 7px; }
+  .home { align-items: flex-end; }
+  .team-name { font-size: 12px; min-height: 34px; }
+  .logo { width: 27px; height: 27px; }
+  .streak { font-size: 20px; min-height: 37px; }
+  .list-heading > :last-child { font-size: 8px; letter-spacing: .7px; }
+  .source { flex-direction: column; gap: 8px; }
+}
+@media (prefers-reduced-motion: no-preference) { button { transition: background-color .15s; } }

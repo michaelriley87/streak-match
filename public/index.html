@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151718">
+  <meta name="description" content="Next 24 hours, ordered by the strength of both teams' current streaks.">
+  <title>Streak Match — Next 24 hours</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="masthead"><a href="/" class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>streak match<span class="brand-dot">.</span></a><span class="edition">THE DAILY MATCHUP LIST</span></header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <div class="eyebrow"><span class="today-dot"></span>NEXT 24 HOURS <span class="date" id="date"></span></div>
+      <h1 id="title">Two teams. Two streaks.</h1>
+      <p>Next 24 hours. The strongest streaks meet at the top.</p>
+    </section>
+    <div class="toolbar">
+      <nav aria-label="Filter by league" id="filters">
+        <button type="button" data-league="all" aria-pressed="true">All leagues</button>
+        <button type="button" data-league="nba" aria-pressed="false">NBA</button>
+        <button type="button" data-league="nhl" aria-pressed="false">NHL</button>
+        <button type="button" data-league="mlb" aria-pressed="false">MLB</button>
+      </nav>
+      <button type="button" id="refresh" class="refresh" aria-label="Refresh games"><span aria-hidden="true">↻</span> Refresh</button>
+    </div>
+    <div class="list-heading"><span id="count" role="status">Loading current games…</span><span>STRONGEST STREAKS FIRST</span></div>
+    <p id="notice" class="notice" role="status" hidden></p>
+    <div id="games" aria-busy="true"><div class="empty">Fetching current matchups from ESPN…</div></div>
+    <footer>
+      <div class="legend"><span><b class="win-dot"></b>Winning streak</span><span><b class="loss-dot"></b>Losing streak</span></div>
+      <p>Sorted by streak length × streak length. Missing streaks appear last.</p>
+      <div class="source"><span>ESPN data · Times in your timezone · Current standings</span><span id="updated"></span></div>
+    </footer>
+  </main>
+</body>
+</html>
